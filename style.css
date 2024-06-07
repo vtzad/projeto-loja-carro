@@ -58,25 +58,35 @@ nav ul li a {
     font-weight: bold;
 }
 
+
 body.light-mode {
-    background-color: var(--light-mode);
-    color: black;
+    background-color: white;
+    color: black; 
 }
 
 
 body.dark-mode {
-    background-color: var(--dark-mode);
-    color: var(--cor-texto-principal);
+    background-color: #121212;
+    color: #ffffff; 
 }
 
+body.dark-mode header,
+body.dark-mode .secao-pesquisa,
+body.dark-mode .secao-categoria,
+body.dark-mode .secao-destaque,
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #ffffff; 
+}
 
-.dark-mode header,
-.dark-mode .secao-pesquisa,
-.dark-mode .secao-categoria,
-.dark-mode .secao-destaque,
-.dark-mode footer {
-    background-color: var(--dark-mode);
-    color: var(--cor-texto-principal);
+body.dark-mode .login-form,
+body.dark-mode .login-dropdown,
+body.dark-mode .container h1,
+body.dark-mode .container h2,
+body.dark-mode .container h3,
+body.dark-mode .container p,
+body.dark-mode .container a {
+    color: #ffffff; 
 }
 
 
