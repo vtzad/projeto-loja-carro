@@ -74,7 +74,8 @@ body.dark-mode header,
 body.dark-mode .secao-pesquisa,
 body.dark-mode .secao-categoria,
 body.dark-mode .secao-destaque,
-body.dark-mode footer {
+body.dark-mode footer,
+body.dark-mode .login-dropdown a {
     background-color: #1e1e1e;
     color: #ffffff; 
 }
@@ -230,6 +231,7 @@ body.dark-mode .container a {
     color: var(--cor-secundaria);
 }
 
+
 .categorias {
     display: flex;
     justify-content: space-around;
@@ -255,11 +257,20 @@ body.dark-mode .container a {
     color: var(--cor-secundaria);
 }
 
+.categoria p {
+    margin-top: 10px;
+    color: #333;
+}
+
 .secao-destaque {
     padding: 40px 0;
     text-align: center;
 }
 
+.secao-destaque h2 {
+    margin-bottom: 20px;
+    color: #003366;
+}
 .secao-destaque h3 {
     margin-bottom: 20px;
     color: var(--cor-secundaria);
@@ -295,4 +306,16 @@ footer {
     color: var(--cor-texto-principal);
     padding: 20px 0;
     text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #0066cc;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+}
+
+img {
+    border-radius: 10px;
+    
 }
