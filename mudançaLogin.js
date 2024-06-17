@@ -21,7 +21,7 @@ function login(event) {
     console.log('Login attempt:', username, password);  
 
     // Simulação de validação de login
-    if (username === 'admin' && password === '1234') {
+    if (username === 'vitorr' && password === 'vitorvtr') {
         document.getElementById('loginForm').style.display = 'none';
         document.getElementById('userName').innerText = username;
         document.getElementById('welcomeMessage').style.display = 'block';
