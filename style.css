@@ -189,6 +189,13 @@ body.dark-mode .container a {
     display: block;
 }
 
+.welcome-message {
+    display: none;
+}
+.error-message {
+    color: red;
+}
+
 .secao-pesquisa {
     background-color: var(--cor-texto-principal);
     padding: 40px 0;
@@ -260,6 +267,12 @@ body.dark-mode .container a {
 .categoria p {
     margin-top: 10px;
     color: #333;
+}
+
+.categoria input {
+    margin-top: 20px;
+    padding: 0 10px;
+    border-radius: 8px;
 }
 
 .secao-destaque {

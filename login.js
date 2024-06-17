@@ -13,10 +13,10 @@ document.getElementById('loginForm').onsubmit = function(event) {
         message.innerText = "Login bem-sucedido!";
         message.className = "success-message";
         message.style.display = 'block';
-        // Redirecionar para a página principal
         setTimeout(() => {
             window.location.href = 'index.html';
         }, 2000);
+        
     } else {
         message.innerText = "Login ou senha incorretos.";
         message.className = "error-message";

@@ -16,21 +16,19 @@ function validarFormulario() {
     message.style.display = 'none';
     success.style.display = 'none';
 
-    // Verificação dos campos obrigatórios
     if (!nome || !dataNascimento || !sexo || !nomeMaterno || !cpf || !celular || !fixo || !endereco || !login || !senha || !confirmaSenha) {
         message.innerText = "Todos os campos são obrigatórios.";
         message.style.display = 'block';
         return false;
     }
 
-    // Validação do campo nome
     if (nome.length < 15 || nome.length > 60 || !/^[a-zA-Z\s]+$/.test(nome)) {
         message.innerText = "O nome deve ter entre 15 e 60 caracteres alfabéticos.";
         message.style.display = 'block';
         return false;
     }
 
-    // Validação dos telefones
+    
     var telefoneRegex = /^\(\+55\)\d{2}-\d{8,9}$/;
     if (!telefoneRegex.test(celular) || !telefoneRegex.test(fixo)) {
         message.innerText = "Os telefones devem estar no formato (+55)XX-XXXXXXXX.";
@@ -38,34 +36,32 @@ function validarFormulario() {
         return false;
     }
 
-    // Validação do login
+    
     if (login.length !== 6 || !/^[a-zA-Z]+$/.test(login)) {
         message.innerText = "O login deve ter exatamente 6 caracteres alfabéticos.";
         message.style.display = 'block';
         return false;
     }
 
-    // Validação da senha
+    
     if (senha.length !== 8 || !/^[a-zA-Z]+$/.test(senha)) {
         message.innerText = "A senha deve ter exatamente 8 caracteres alfabéticos.";
         message.style.display = 'block';
         return false;
     }
 
-    // Verificação da senha
     if (senha !== confirmaSenha) {
         message.innerText = "As senhas não coincidem.";
         message.style.display = 'block';
         return false;
     }
 
-    // Se todas as validações passarem
     localStorage.setItem('login', login);
     localStorage.setItem('senha', senha);
 
     success.style.display = 'block';
     setTimeout(() => {
-        window.location.href = 'login.html'; // Redireciona para a tela de login
+        window.location.href = 'index.html'; 
     }, 2000);
 
     return false;

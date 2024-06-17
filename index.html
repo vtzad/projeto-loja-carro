@@ -6,6 +6,8 @@
     <title>skycars</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
+    <script src="login.js"></script>
+    <script src="mudançaLogin.js"></script>
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -36,16 +38,21 @@
                 </label>
             </div>
 
-            <div class="login-form">
-                <button class="login-button">Login</button>
-                <div class="login-dropdown">
-                    <form>
-                        <input type="text" placeholder="Usuário">
-                        <input type="password" placeholder="Senha">
+            <div class="login-form" id="loginForm">
+                <button class="login-button" onclick="toggleLoginForm()">Login</button>
+                <div class="login-dropdown" id="loginDropdown">
+                    <form id="loginFormElement">
+                        <input type="text" placeholder="Usuário" id="login" name="login" required>
+                        <input type="password" placeholder="Senha" id="senha" name="senha" required>
                         <button type="submit">Login</button>
                     </form>
+                    <div id="message" class="error-message"></div>
                     <a href="register.html">Crie uma conta</a>
                 </div>
+            </div>
+            <div class="welcome-message" id="welcomeMessage">
+                Seja bem-vindo, <span id="userName"></span>!
+            </div>
             </div>
         </div>
     </header>
@@ -112,7 +119,7 @@
             <h2>Categorias</h2>
             <div class="categorias">
                 <div class="categoria">
-                    <img src="/img/Sedan.jpg" alt="Sedan">
+                    <a href="sedan.html"><img src="/img/Sedan.jpg" alt="Sedan"></a>
                     <h3>Sedan</h3>
                 </div>
                 <div class="categoria">
@@ -159,6 +166,7 @@
             <p>&copy; 2024 skycars. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="mudançaLogin.js"></script>
 </body>
 </html>
 
