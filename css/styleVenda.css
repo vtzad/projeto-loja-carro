@@ -1,0 +1,98 @@
+.secao-venda {
+    background-color: var(--cor-texto-principal);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header h3 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.secao-venda {
+    margin-bottom: 30px;
+    color: var(--cor-secundaria);
+}
+
+.form-container {
+    background-color: var(--cor-principal);
+    padding: 30px;
+    box-shadow: 5px 0 20px rgba(0, 1, 0, 1.0);
+    border-radius: 10px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.form-header p {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-body .form-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box-input {
+    margin-bottom: 10px;
+}
+
+.box-input label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--cor-secundaria);
+}
+
+.box-input input,
+.box-input textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.optional-box p,
+.box-input p {
+    margin-bottom: 10px;
+    color: var(--cor-secundaria);
+}
+
+
+.optional-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.optional-list li {
+    margin-bottom: 10px;
+}
+
+.optional-list label {
+    margin-left: 5px;
+    color: var(--cor-secundaria);
+}
+
+input[type="submit"] {
+    background-color: #0066cc;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #004c99;
+}
